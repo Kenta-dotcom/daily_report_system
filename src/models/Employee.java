@@ -24,8 +24,7 @@ import javax.persistence.Table;
             query = "SELECT COUNT(e) FROM Employee AS e"
             ),
     @NamedQuery(
-            // 指定の社員番号がDBに存在するか調べる
-            name = "checkRegisterCode",
+            name = "checkRegisteredCode",
             query = "SELECT COUNT(e) FROM Employee AS e WHERE e.code = :code"
             ),
     @NamedQuery(
